@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
  "cells": [
   {
@@ -145,7 +146,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 20,
+   "execution_count": 3,
    "metadata": {},
    "outputs": [
     {
@@ -236,7 +237,7 @@
        "4  17.0      0.148810  0.664652       1       0       0"
       ]
      },
-     "execution_count": 20,
+     "execution_count": 3,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -263,10 +264,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 21,
-   "metadata": {
-    "collapsed": true
-   },
+   "execution_count": 4,
+   "metadata": {},
    "outputs": [],
    "source": [
     "import statsmodels.api as sm\n",
@@ -275,10 +274,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 22,
-   "metadata": {
-    "collapsed": true
-   },
+   "execution_count": 5,
+   "metadata": {},
    "outputs": [],
    "source": [
     "formula = \"mpg ~ acceleration+weight+orig_1+orig_2+orig_3\"\n",
@@ -294,10 +291,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 23,
-   "metadata": {
-    "collapsed": true
-   },
+   "execution_count": 6,
+   "metadata": {},
    "outputs": [],
    "source": [
     "outcome = 'mpg'\n",
@@ -308,7 +303,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 24,
+   "execution_count": 7,
    "metadata": {},
    "outputs": [
     {
@@ -326,10 +321,10 @@
        "  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   256.7</td> \n",
        "</tr>\n",
        "<tr>\n",
-       "  <th>Date:</th>             <td>Thu, 08 Nov 2018</td> <th>  Prob (F-statistic):</th> <td>1.86e-107</td>\n",
+       "  <th>Date:</th>             <td>Mon, 03 Dec 2018</td> <th>  Prob (F-statistic):</th> <td>1.86e-107</td>\n",
        "</tr>\n",
        "<tr>\n",
-       "  <th>Time:</th>                 <td>13:56:09</td>     <th>  Log-Likelihood:    </th> <td> -1107.2</td> \n",
+       "  <th>Time:</th>                 <td>12:50:27</td>     <th>  Log-Likelihood:    </th> <td> -1107.2</td> \n",
        "</tr>\n",
        "<tr>\n",
        "  <th>No. Observations:</th>      <td>   392</td>      <th>  AIC:               </th> <td>   2224.</td> \n",
@@ -378,9 +373,9 @@
        "  <th>Skew:</th>          <td> 0.648</td> <th>  Prob(JB):          </th> <td>6.95e-13</td>\n",
        "</tr>\n",
        "<tr>\n",
-       "  <th>Kurtosis:</th>      <td> 4.322</td> <th>  Cond. No.          </th> <td>2.18e+15</td>\n",
+       "  <th>Kurtosis:</th>      <td> 4.322</td> <th>  Cond. No.          </th> <td>1.13e+16</td>\n",
        "</tr>\n",
-       "</table>"
+       "</table><br/><br/>Warnings:<br/>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.<br/>[2] The smallest eigenvalue is 5.25e-30. This might indicate that there are<br/>strong multicollinearity problems or that the design matrix is singular."
       ],
       "text/plain": [
        "<class 'statsmodels.iolib.summary.Summary'>\n",
@@ -390,8 +385,8 @@
        "Dep. Variable:                    mpg   R-squared:                       0.726\n",
        "Model:                            OLS   Adj. R-squared:                  0.723\n",
        "Method:                 Least Squares   F-statistic:                     256.7\n",
-       "Date:                Thu, 08 Nov 2018   Prob (F-statistic):          1.86e-107\n",
-       "Time:                        13:56:09   Log-Likelihood:                -1107.2\n",
+       "Date:                Mon, 03 Dec 2018   Prob (F-statistic):          1.86e-107\n",
+       "Time:                        12:50:27   Log-Likelihood:                -1107.2\n",
        "No. Observations:                 392   AIC:                             2224.\n",
        "Df Residuals:                     387   BIC:                             2244.\n",
        "Df Model:                           4                                         \n",
@@ -409,17 +404,17 @@
        "Omnibus:                       37.427   Durbin-Watson:                   0.840\n",
        "Prob(Omnibus):                  0.000   Jarque-Bera (JB):               55.989\n",
        "Skew:                           0.648   Prob(JB):                     6.95e-13\n",
-       "Kurtosis:                       4.322   Cond. No.                     2.18e+15\n",
+       "Kurtosis:                       4.322   Cond. No.                     1.13e+16\n",
        "==============================================================================\n",
        "\n",
        "Warnings:\n",
        "[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.\n",
-       "[2] The smallest eigenvalue is 1.41e-28. This might indicate that there are\n",
+       "[2] The smallest eigenvalue is 5.25e-30. This might indicate that there are\n",
        "strong multicollinearity problems or that the design matrix is singular.\n",
        "\"\"\""
       ]
      },
-     "execution_count": 24,
+     "execution_count": 7,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -438,7 +433,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 25,
+   "execution_count": 8,
    "metadata": {},
    "outputs": [
     {
@@ -456,10 +451,10 @@
        "  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   256.7</td> \n",
        "</tr>\n",
        "<tr>\n",
-       "  <th>Date:</th>             <td>Thu, 08 Nov 2018</td> <th>  Prob (F-statistic):</th> <td>1.86e-107</td>\n",
+       "  <th>Date:</th>             <td>Mon, 03 Dec 2018</td> <th>  Prob (F-statistic):</th> <td>1.86e-107</td>\n",
        "</tr>\n",
        "<tr>\n",
-       "  <th>Time:</th>                 <td>13:56:09</td>     <th>  Log-Likelihood:    </th> <td> -1107.2</td> \n",
+       "  <th>Time:</th>                 <td>12:51:48</td>     <th>  Log-Likelihood:    </th> <td> -1107.2</td> \n",
        "</tr>\n",
        "<tr>\n",
        "  <th>No. Observations:</th>      <td>   392</td>      <th>  AIC:               </th> <td>   2224.</td> \n",
@@ -508,9 +503,9 @@
        "  <th>Skew:</th>          <td> 0.648</td> <th>  Prob(JB):          </th> <td>6.95e-13</td>\n",
        "</tr>\n",
        "<tr>\n",
-       "  <th>Kurtosis:</th>      <td> 4.322</td> <th>  Cond. No.          </th> <td>2.18e+15</td>\n",
+       "  <th>Kurtosis:</th>      <td> 4.322</td> <th>  Cond. No.          </th> <td>1.13e+16</td>\n",
        "</tr>\n",
-       "</table>"
+       "</table><br/><br/>Warnings:<br/>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.<br/>[2] The smallest eigenvalue is 5.25e-30. This might indicate that there are<br/>strong multicollinearity problems or that the design matrix is singular."
       ],
       "text/plain": [
        "<class 'statsmodels.iolib.summary.Summary'>\n",
@@ -520,8 +515,8 @@
        "Dep. Variable:                    mpg   R-squared:                       0.726\n",
        "Model:                            OLS   Adj. R-squared:                  0.723\n",
        "Method:                 Least Squares   F-statistic:                     256.7\n",
-       "Date:                Thu, 08 Nov 2018   Prob (F-statistic):          1.86e-107\n",
-       "Time:                        13:56:09   Log-Likelihood:                -1107.2\n",
+       "Date:                Mon, 03 Dec 2018   Prob (F-statistic):          1.86e-107\n",
+       "Time:                        12:51:48   Log-Likelihood:                -1107.2\n",
        "No. Observations:                 392   AIC:                             2224.\n",
        "Df Residuals:                     387   BIC:                             2244.\n",
        "Df Model:                           4                                         \n",
@@ -539,17 +534,17 @@
        "Omnibus:                       37.427   Durbin-Watson:                   0.840\n",
        "Prob(Omnibus):                  0.000   Jarque-Bera (JB):               55.989\n",
        "Skew:                           0.648   Prob(JB):                     6.95e-13\n",
-       "Kurtosis:                       4.322   Cond. No.                     2.18e+15\n",
+       "Kurtosis:                       4.322   Cond. No.                     1.13e+16\n",
        "==============================================================================\n",
        "\n",
        "Warnings:\n",
        "[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.\n",
-       "[2] The smallest eigenvalue is 1.41e-28. This might indicate that there are\n",
+       "[2] The smallest eigenvalue is 5.25e-30. This might indicate that there are\n",
        "strong multicollinearity problems or that the design matrix is singular.\n",
        "\"\"\""
       ]
      },
-     "execution_count": 25,
+     "execution_count": 8,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -591,10 +586,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 26,
-   "metadata": {
-    "collapsed": true
-   },
+   "execution_count": 9,
+   "metadata": {},
    "outputs": [],
    "source": [
     "from sklearn.linear_model import LinearRegression"
@@ -602,7 +595,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 27,
+   "execution_count": 10,
    "metadata": {},
    "outputs": [
     {
@@ -611,7 +604,7 @@
        "LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)"
       ]
      },
-     "execution_count": 27,
+     "execution_count": 10,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -624,7 +617,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 28,
+   "execution_count": 11,
    "metadata": {},
    "outputs": [
     {
@@ -633,7 +626,7 @@
        "array([ 5.04941007, -5.87640551, -0.71140721, -0.29903267,  1.01043987])"
       ]
      },
-     "execution_count": 28,
+     "execution_count": 11,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -652,16 +645,16 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 29,
+   "execution_count": 12,
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "21.472164286075383"
+       "21.4721642860754"
       ]
      },
-     "execution_count": 29,
+     "execution_count": 12,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -720,10 +713,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 30,
-   "metadata": {
-    "collapsed": true
-   },
+   "execution_count": 13,
+   "metadata": {},
    "outputs": [],
    "source": [
     "predictors = predictors.drop(\"orig_3\",axis=1)"
@@ -731,7 +722,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 31,
+   "execution_count": 14,
    "metadata": {},
    "outputs": [
     {
@@ -740,7 +731,7 @@
        "array([ 5.04941007, -5.87640551, -1.72184708, -1.30947254])"
       ]
      },
-     "execution_count": 31,
+     "execution_count": 14,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -752,16 +743,16 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 32,
+   "execution_count": 15,
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "22.482604160455665"
+       "22.48260416045567"
       ]
      },
-     "execution_count": 32,
+     "execution_count": 15,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -779,7 +770,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 33,
+   "execution_count": 16,
    "metadata": {},
    "outputs": [
     {
@@ -797,10 +788,10 @@
        "  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   256.7</td> \n",
        "</tr>\n",
        "<tr>\n",
-       "  <th>Date:</th>             <td>Thu, 08 Nov 2018</td> <th>  Prob (F-statistic):</th> <td>1.86e-107</td>\n",
+       "  <th>Date:</th>             <td>Mon, 03 Dec 2018</td> <th>  Prob (F-statistic):</th> <td>1.86e-107</td>\n",
        "</tr>\n",
        "<tr>\n",
-       "  <th>Time:</th>                 <td>13:56:09</td>     <th>  Log-Likelihood:    </th> <td> -1107.2</td> \n",
+       "  <th>Time:</th>                 <td>12:55:10</td>     <th>  Log-Likelihood:    </th> <td> -1107.2</td> \n",
        "</tr>\n",
        "<tr>\n",
        "  <th>No. Observations:</th>      <td>   392</td>      <th>  AIC:               </th> <td>   2224.</td> \n",
@@ -848,7 +839,7 @@
        "<tr>\n",
        "  <th>Kurtosis:</th>      <td> 4.322</td> <th>  Cond. No.          </th> <td>    9.59</td>\n",
        "</tr>\n",
-       "</table>"
+       "</table><br/><br/>Warnings:<br/>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified."
       ],
       "text/plain": [
        "<class 'statsmodels.iolib.summary.Summary'>\n",
@@ -858,8 +849,8 @@
        "Dep. Variable:                    mpg   R-squared:                       0.726\n",
        "Model:                            OLS   Adj. R-squared:                  0.723\n",
        "Method:                 Least Squares   F-statistic:                     256.7\n",
-       "Date:                Thu, 08 Nov 2018   Prob (F-statistic):          1.86e-107\n",
-       "Time:                        13:56:09   Log-Likelihood:                -1107.2\n",
+       "Date:                Mon, 03 Dec 2018   Prob (F-statistic):          1.86e-107\n",
+       "Time:                        12:55:10   Log-Likelihood:                -1107.2\n",
        "No. Observations:                 392   AIC:                             2224.\n",
        "Df Residuals:                     387   BIC:                             2244.\n",
        "Df Model:                           4                                         \n",
@@ -884,7 +875,7 @@
        "\"\"\""
       ]
      },
-     "execution_count": 33,
+     "execution_count": 16,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -927,9 +918,11 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.6.6"
+   "version": "3.6.5"
   }
  },
  "nbformat": 4,
  "nbformat_minor": 2
 }
+=======
+>>>>>>> 71257ee48ab44f0677817b44869ea5f0f986ba1b
